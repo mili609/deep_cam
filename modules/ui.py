@@ -79,7 +79,7 @@ from modules import imread_unicode
 from modules.video_capture import VideoCapturer
 
 if platform.system() == "Windows":
-    from pygrabber.dshow_graph import FilterGraph
+    pass
 
 import json
 

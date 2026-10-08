@@ -45,7 +45,6 @@ def validated_providers(providers=None):
                         GPU_NAME = name.value.decode(errors="replace")
                     if hasattr(ort, "preload_dlls"):
                         ort.preload_dlls()
-                    import onnx
                     from onnx import helper, TensorProto
                     graph = helper.make_graph(
                         [helper.make_node("Identity", ["x"], ["y"])], "cuda_probe",

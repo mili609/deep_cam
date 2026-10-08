@@ -4,7 +4,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import numpy as np
 import onnxruntime as ort
-import onnx
 from onnx import helper, TensorProto
 print("ORT", ort.__version__, ort.__file__, flush=True)
 print("AVAILABLE", ort.get_available_providers(), flush=True)
