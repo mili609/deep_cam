@@ -93,4 +93,4 @@ verify_live.py uses controlled camera input with real models. verify_camera.py o
 
 Latest local results: 10 regression tests passed. The controlled-input live GUI test passed at 0.35 FPS on CPU. Physical webcam verification could not open camera 0, and CUDA initialization failed because nvcuda.dll was missing in the test environment. Physical webcam replacement and CUDA FPS have not yet been verified.
 
-These instructions describe the updated local checkout. Uploading this file alone does not install the app fixes or verification scripts in another repository.
+This repository includes the updated app code and verification scripts. Virtual environments, downloaded model weights, private camera diagnostics, and generated outputs are excluded. Generate the controlled test images with tests/verify_pipeline.py before running tests that use diagnostics/source.png.
